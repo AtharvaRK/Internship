@@ -12,7 +12,7 @@
   </head>
   <style>
 #pay{
-      margin-left:100px}
+      margin-left:70px}
 
 #pay1{
       margin-left:150px}
@@ -28,7 +28,7 @@ h4{
 .text-block {
     position: relative;
     width: 450px;
-    height: 500px;
+    height: 550px;
     top: 180px;
   right: 30px;
   background-color: #7c8e92;
@@ -56,6 +56,9 @@ h4{
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="./STF1.1.html"> About Us</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./STF1.3.html"> Contact Us</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -71,30 +74,32 @@ h4{
           <h4>Covid-19 Relief </h4>
           <br>
           <p>We are trying to provide protection kit as donation to our healthcare warrior </p>
-          <br>
           <p>
-              With your help we stride to increase our donation of protection kit to healthcare warriors around us
+              With your help we stride to increase our donation of protection kit to healthcare warriors and Food Relief packet to needy people around us .  
           </p>
           <b>
           <ul>
               <li>
                   1 Mask cost = 50 RS
               </li>
-
-              <li>
-                2 Mask cost = 100RS
-            </li>
             <li>
                  1 Sanitization Kit = 500RS
             </li>            
-              <li>
-                 2 Sanitization Kit = 1000RS
-            </li>
           </b>
           </ul>
 
-          <form id='pay'><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H6jApbNKYRkpEv" async> </script> </form>
-
+          <!--<form id='pay'><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H6jApbNKYRkpEv" async> </script> </form>
+          -->
+          <div id='pay' class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_H97d2FlwayaMAE/view" data-text="Donate Now" data-color="#528FF0" data-size="large">
+            <script>
+              (function(){
+                var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+                if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+                s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+                rzp && rzp.init && rzp.init()}})();
+            </script>
+          </div>
+              
           <p>
             <b>Since this is a demo page you can donate by clicking on Indian goverment official website </b></p>
             <a  href='https://www.pmcares.gov.in/en/'><button id="pay1" type="button" class="btn btn-primary ">Info</button></a>
